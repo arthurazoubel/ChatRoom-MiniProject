@@ -56,6 +56,22 @@
     
 
     </div>
+    <!-- Using firebase / firestore -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyDLEBgu40j1xoDkAfc6k8Nna_-UkydCieA",
+          authDomain: "sleckchatroom.firebaseapp.com",
+          databaseURL: "https://sleckchatroom.firebaseio.com",
+          projectId: "sleckchatroom",
+          storageBucket: "sleckchatroom.appspot.com",
+          messagingSenderId: "465723372492",
+          appId: "1:465723372492:web:77d49c82be58624bb26369"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+      </script>
     <script src="./JavaScripts/chat.js"></script>
     <script src="./JavaScripts/ui.js"></script>
     <script src="./JavaScripts/app.js"></script>
